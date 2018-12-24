@@ -12,8 +12,8 @@ class Home extends Component {
 
   render() {
     let finalList = [];
-    finalList = this.state.list.map(item => {
-      return <option>{item}</option>;
+    finalList = this.state.list.map((item, key) => {
+      return <option key={key}>{item}</option>;
     });
     return (
       <div>
